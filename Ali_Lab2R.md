@@ -15,9 +15,10 @@ This Blog Post is served to deal with the idea of testing and debugging. The Blo
 
 #### Code Change 
 - Therefore, to address the failed-output, we need to consider the syntax of the image link ```![name](image)``` and therefore isolate from the rest of the hyperlinks.
+- By considering `!` in the method, we can handle cases where an image-link exists amongst valid hyperlinks
 - Such a considertaion can be done through the code change shown:  
 ![Improv](Improv1.png)
-- By considering `!` in the method, we can handle cases where an image-link exists amongst valid hyperlinks
+
 ---
 ### **Code Change 2**  
 - Code change revolves around dealing with incorrect syntaxes such that an `[` is not found
